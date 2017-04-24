@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using Newtonsoft.Json;
 
 namespace TwitterClient.Controllers
 {
@@ -8,8 +9,10 @@ namespace TwitterClient.Controllers
     }
     public class Tweet
     {
+        [JsonProperty("from_user")]
         public string UserName { get; set; }
 
+        [JsonProperty("from_user")]
         public string TweetText { get; set; }
 
     }

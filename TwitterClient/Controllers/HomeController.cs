@@ -21,7 +21,7 @@ namespace TwitterClient.Controllers
                 model = readtask.Result;
             });
             task.Wait();
-            return View();
+            return View(model);
         }
 
         public ActionResult About()
