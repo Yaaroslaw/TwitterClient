@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterClient", "TwitterCli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPISelfHost", "WebAPISelfHost\WebAPISelfHost.csproj", "{9FF81C91-5B90-46CD-84D3-CC078524175A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONPDemo", "JSONPDemo\JSONPDemo.csproj", "{9107013A-2EC3-48A3-9453-B4D25D7BD808}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9FF81C91-5B90-46CD-84D3-CC078524175A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FF81C91-5B90-46CD-84D3-CC078524175A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FF81C91-5B90-46CD-84D3-CC078524175A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9107013A-2EC3-48A3-9453-B4D25D7BD808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9107013A-2EC3-48A3-9453-B4D25D7BD808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9107013A-2EC3-48A3-9453-B4D25D7BD808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9107013A-2EC3-48A3-9453-B4D25D7BD808}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
