@@ -8,33 +8,27 @@ using System.Web.Http;
 namespace JSONPDemo.Controllers
 {
     [Authorize]
-    public class ValuesController : ApiController
+    public class JSONPController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+
+       /// <summary>
+       /// Callback = a method that a caller of the service whants the generator of JS to call
+       /// </summary>
+       /// <param name="id"></param>
+       /// <param name="callback"></param>
+       /// <returns></returns>
+        public HttpResponseMessage Get(int id, string callback)
         {
-            return new string[] { "value1", "value2" };
+            var content = new JSONPReturn
+            {
+                Callback = callback,
+                JSON = ""
+            };
+            var message = Request.CreateResponse(HttpStatusCode.OK, content,
+                "application/javascript");
+            return message;
         }
 
-        // GET api/values/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        public void Delete(int id)
-        {
-        }
+       
     }
 }
