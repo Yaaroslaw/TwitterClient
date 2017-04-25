@@ -13,7 +13,8 @@ namespace WebAPISelfHost
             var task = new Task<HttpResponseMessage>(() =>
            {
                var message = new HttpResponseMessage();
-               message.Content = new StringContent("Hello Self Hosting");
+               var userName = Thread.CurrentPrincipal.Identity.Name;
+               message.Content = new StringContent("Hello user - " + userName);
                Console.WriteLine("Htt response sent");
                return message;
            });
