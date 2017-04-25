@@ -14,7 +14,7 @@ namespace WebAPISelfHost
     {
         static void Main(string[] args)
         {
-            var config = new HttpSelfHostConfiguration("http://localhost:8999");
+            var config = new MyConfig("http://localhost:8999");
             var server = new HttpSelfHostServer(config, new MySimpleHttpMessageHandler());
             config.Routes.MapHttpRoute("default", "api/{controller}/{id}", new { id = System.Web.Http.RouteParameter.Optional });
             var task = server.OpenAsync();

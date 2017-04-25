@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyConfig.cs" />
     <Compile Include="MyController.cs" />
     <Compile Include="MySimpleHttpMessageHandler.cs" />
     <Compile Include="Program.cs" />
