@@ -13,6 +13,7 @@ namespace JSONPDemo
     {
         protected void Application_Start()
         {
+            GlobalConfiguration.Configuration.Formatters.Insert(0, new MyJSONPFormatter());
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

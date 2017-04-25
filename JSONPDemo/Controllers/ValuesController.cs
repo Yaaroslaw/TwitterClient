@@ -22,7 +22,7 @@ namespace JSONPDemo.Controllers
             var content = new JSONPReturn
             {
                 Callback = callback,
-                JSON = ""
+                JSON = "{'id':'" + id.ToString() + "', 'data':'Hello from JSONP WEB API Style'"
             };
             var message = Request.CreateResponse(HttpStatusCode.OK, content,
                 "application/javascript");
